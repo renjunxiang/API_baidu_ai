@@ -26,14 +26,14 @@ def face_detect(API_KEY=_API_KEY,
     :param savepath: 监测后图片保存路径,默认None
     :return: 百度API分析结果,dict
     '''
-    # 获取access_token:<http://ai.baidu.com/docs#/Auth/top>
+    # 获取access_token
     access_token = get_token(API_KEY, SECRET_KEY)
 
     f = open(image_path, 'rb')  # 二进制方式打开图文件
     f_base64 = base64.b64encode(f.read())  # 读取文件内容，转换为base64编码
     f.close()
 
-    # 调百度实体识别接口:<http://ai.baidu.com/docs#/EntityAnnotation-API/top>
+    # 百度人脸检测接口文档:<https://ai.baidu.com/docs#/Face-Detect-V3/top>
     url = account['api']['face_detect']['url']
     params = {'access_token': access_token}
     headers = {'Content-Type': account['api']['face_detect']['Content-Type']}
@@ -78,7 +78,7 @@ def face_detect(API_KEY=_API_KEY,
                          y[13:22],
                          linewidth=line_width,
                          color=line_color)
-                # 左睫毛
+                # 左眉毛
                 plt.plot(x[22:29] + x[22:23],
                          y[22:29] + y[22:23],
                          linewidth=line_width,
@@ -88,7 +88,7 @@ def face_detect(API_KEY=_API_KEY,
                          y[30:39],
                          linewidth=line_width,
                          color=line_color)
-                # 右睫毛
+                # 右眉毛
                 plt.plot(x[39:47] + x[39:40],
                          y[39:47] + y[39:40],
                          linewidth=line_width,

@@ -18,10 +18,10 @@ def entity_annotation(text,
     :param SECRET_KEY: 项目账号信息
     :return: 百度API返回结果
     '''
-    # 获取access_token:<http://ai.baidu.com/docs#/Auth/top>
+    # 获取access_token
     access_token = get_token(API_KEY, SECRET_KEY)
 
-    # 调百度实体识别接口:<http://ai.baidu.com/docs#/EntityAnnotation-API/top>
+    # 调百度实体识别接口文档:<http://ai.baidu.com/docs#/EntityAnnotation-API/top>
     url = account['api']['entity_annotation']['url']
     params = {'access_token': access_token}
     headers = {'Content-Type': account['api']['entity_annotation']['Content-Type']}
