@@ -11,16 +11,16 @@ get_token.py：需要API_KEY和SECRET_KEY，在config/account.py中请自行修�
 
 ### 调用平台的SDK做自然语言处理
 NLP_SDK.py：公测以后百度推荐使用SDK方式，因此对其做了简单的封装，需要APP_ID、API_KEY和SECRET_KEY，返回字典<br>
-![api3](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/entity_annotation.jpg)<br>
+![](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/entity_annotation.jpg)<br>
 
 ### 调用平台的API做实体识别
 entity_annotation.py：需要API_KEY和SECRET_KEY，返回字典
-![api3](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/depParser.jpg)<br>
+![](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/depParser.jpg)<br>
 
 ### 调用平台的API做人脸检测
 face_detect.py：需要API_KEY和SECRET_KEY，返回字典，选择是否返回图片
-![api3](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/e1.jpg)<br>
-![api3](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/r1.jpg)<br>
+![](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/e2.jpg)<br>
+![](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/r2.jpg)<br>
 
 
 
