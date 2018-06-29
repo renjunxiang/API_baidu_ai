@@ -28,7 +28,7 @@ text = '本区办理的营业执照且登记档案中的场地使用证明仍在
 result = NLP_SDK(text=text, method='depParser')
 print(result)
 ```
-![](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/entity_annotation.jpg)<br>
+![](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/depParser.jpg)<br>
 
 ### 调用平台的API做实体识别
 entity_annotation.py：需要API_KEY和SECRET_KEY，返回字典<br>
@@ -39,7 +39,7 @@ text = '委托他人申请的，还须提交委托书、委托代理人或指定
 results = entity_annotation(text=text)
 print(results)
 ```
-![](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/depParser.jpg)<br>
+![](https://github.com/renjunxiang/API_baidu_ai/blob/master/picture/entity_annotation.jpg)<br>
 
 ### 调用平台的API做人脸检测
 face_detect.py：需要API_KEY和SECRET_KEY，返回字典，选择是否返回图片<br>
