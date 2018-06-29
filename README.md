@@ -2,6 +2,8 @@
 [![](https://img.shields.io/badge/Python-3.5-blue.svg)](https://www.python.org/)
 [![](https://img.shields.io/badge/baidu--aip-2.1.0.0-brightgreen.svg)](https://pypi.python.org/pypi/baidu-aip/2.1.0.0)
 [![](https://img.shields.io/badge/requests-2.18.4-brightgreen.svg)](https://pypi.python.org/pypi/requests/2.18.4)<br>
+
+## 项目简介
 **百度人工智能平台API封装**
 
 ## 功能说明
